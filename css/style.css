@@ -1,0 +1,77 @@
+
+html,body{
+    border: 0;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: none;
+}
+.main{
+    background-image: url("final.jpg");
+    background-position: center;
+    background-repeat: no;
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+}
+.link{
+    margin: 20px;
+    margin-top: 30px;
+    float: right;
+    color: white;
+    width: auto;
+    cursor: pointer;
+}
+.icon{
+    display: flex;
+}
+.icon-name{
+    display: flex;
+    margin-left: 10px;
+    color: white;
+}
+.fa-instagram{
+    color: white;
+}
+.jit{
+
+    position: relative;
+    display: flex;
+    justify-content: center;
+    color: white;
+    font-family: 'Dancing Script', cursive;
+    letter-spacing: 10px;
+}
+h1{
+    font-size: 110px;
+    animation:change 7s ease infinite;
+}
+@keyframes change{
+    0%{
+        color:#6310de;
+    }
+    50%{
+      color:white;  
+    }
+    100%{
+        color:#6310de;
+    }
+
+
+}
+.chat{
+    display: inline-block;
+    
+    font-family: 'Poppins', sans-serif;
+}
+.wp{
+    margin: 0;
+    padding: 0;
+    margin-top: 30px;
+}
+.center{
+    text-align: center;
+}

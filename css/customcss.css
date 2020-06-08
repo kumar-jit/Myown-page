@@ -1,0 +1,135 @@
+body{
+    margin: 0;
+    background-color: rgb(17, 18, 20);
+}
+.center{
+    text-align: center;
+    padding-top: 300px;
+}
+.btnn-group{
+    display: inline-block;
+    margin: 20px;
+}
+.bttn{
+    padding: 10px 27px;
+    font-size: 25px;
+    border-radius: 25px;
+    cursor: pointer;
+    text-decoration: none;
+    letter-spacing: 1px;
+    text-align: center;
+}
+.btnn-mid-to-end{
+    position: relative;
+    border-radius: 5px;
+    border: 2px solid #F41DA0 ;
+    background: none;
+    color: white;
+    box-shadow: 0 0 10px 5px rgba(244 29 160 1),
+                0 0 10px 10px rgba(244 29 160 1),
+                0 0 10px 20px rgba(244 29 160 1) inset 0 0 10px 10px rgba(244 29 160 1);
+    overflow: hidden;
+    z-index: 1;
+}
+.btnn-mid-to-end::after{
+    position: absolute;
+    content: '';
+    background-color: #F41DA0;
+    width: 0%;
+    height: 100%;
+    left: 50%;
+    top: 0;
+    transition: 600ms;
+    border-top-right-radius: 2px;
+    border-bottom-right-radius: 2px;
+    z-index: -1;
+    overflow: hidden;
+}
+.btnn-mid-to-end::before{
+    position: absolute;
+    content: '';
+    background-color: #F41DA0;
+    width: 0%;
+    height: 100%;
+    left: 50%;
+    top: 0;
+    transition: 600ms;
+    z-index: -1;
+    border-top-left-radius: 2px;
+    border-bottom-left-radius: 2px;
+    overflow: hidden;
+}
+.btnn-mid-to-end:hover::after{
+
+    width: 50%;
+    height: 100%;
+    left: 50%;
+    top: 0;
+    transition: 600ms;
+}
+.btnn-mid-to-end:hover::before{
+
+    width: 50%;
+    height: 100%;
+    left: 0%;
+    top: 0;
+    transition: 600ms;
+}
+.btnn-glow{
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    color: white;
+    transition:0.8s ;
+    background-color: #6310de;
+}
+.btnn-glow:hover{
+    color:white;
+    background: #6310de;
+    box-shadow: 0 0 10px #6310de,
+                0 0 30px #6310de,
+                0 0 50px #6310de;
+    transition:0.4s ;
+}
+.btnn-anmi-glow{
+    border-radius: 5px;
+    background: #2196f3;
+    color: white;
+    animation:moving 2s ease infinite;
+    box-shadow: 0 0 10px #2196f3; 
+    transition: 0.3s;
+}
+@keyframes moving{
+    0%,10%{
+        box-shadow: 0 0 10px #2196f3;
+        
+    }
+    40%{
+        box-shadow: 0 0 10px #2196f3,0 0 70px #2196f3;
+        
+    }
+    70%{
+        box-shadow: 0 0 10px #2196f3,0 0 70px #2196f3;
+        
+    }
+   
+}
+.btnn-anmi-glow:hover{
+    background-color:  #FD46F0;
+    animation:movingc 2s ease infinite;
+    box-shadow: 0 0 10px #FD46F0; 
+}
+@keyframes movingc{
+    0%,10%{
+        box-shadow: 0 0 10px #FD46F0;
+        
+    }
+    40%{
+        box-shadow: 0 0 10px #FD46F0,0 0 70px #FD46F0;
+        
+    }
+    70%{
+        box-shadow: 0 0 10px #FD46F0,0 0 70px #FD46F0;
+        
+    }
+   
+}
